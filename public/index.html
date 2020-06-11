@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Video Example</title>
+</head>
+<body>
+    <h1>Welcome To Webrtc example
+    </h1>
+    <div id="selectRoom" style="display: block;">
+        <label>Enter the room name</label>
+        <input type="text" id="roomNumber"/>
+        <button id="goRoom">Go</button>
+    </div>
+    <div id="consultingRoom" style="display: none;">
+        <div>
+            <video id="localVideo" autoplay>
+            </video>
+        </div>
+        <div style="margin-top: -160px;display: inline-block;">
+            <video id="remoteVideo" autoplay height="170" width="170" style="align-self: baseline;float: left;"></video>
+        </div>
+       
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
